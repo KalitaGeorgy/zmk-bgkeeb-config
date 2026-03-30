@@ -21,6 +21,10 @@
     status = "okay";
 };
 
+&sensors {
+    sensors = <&right_encoder>;
+};
+
 
 /* PMW3610 Trackball Configuration
 &pinctrl {
