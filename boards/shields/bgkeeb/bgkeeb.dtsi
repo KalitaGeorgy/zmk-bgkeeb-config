@@ -5,6 +5,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,sensors = &sensors;
     };
 
     default_transform: keymap_transform_0 {
@@ -35,8 +36,8 @@
             ;
     };
 
-    // #define ENCODERS_PAD_A {B5} {9} {A9}
-    // #define ENCODERS_PAD_B {B4} {8} {A8}
+    #define ENCODERS_PAD_A {B5} {9} {A9}
+    #define ENCODERS_PAD_B {B4} {8} {A8}
 
     // #define ENCODER_RESOLUTION 2 ------- used default zmk values instead
     left_encoder: encoder_left {
