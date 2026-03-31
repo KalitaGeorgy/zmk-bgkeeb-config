@@ -17,32 +17,15 @@
         ;
 };
 
-right_encoder: encoder_right {
-    compatible = "alps,ec11";
-    a-gpios = <8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <80>;
-    status = "okay";
-};
-
 &right_encoder {
     status = "okay";
-};
-
-sensors: sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&left_encoder &right_encoder>;
-    triggers-per-rotation = <20>;
 };
 
 &sensors {
     sensors = <&right_encoder>;
 };
 
-
-/* PMW3610
-
-Trackball Configuration
+/* PMW3610 Trackball Configuration
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
