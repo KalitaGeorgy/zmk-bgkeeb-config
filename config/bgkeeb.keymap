@@ -12,7 +12,7 @@
 
 &lt { tapping-term-ms = <150>; };
 
-&led_strip { chain-length = <18>; };
+&led_strip { chain-length = <36>; };
 
 / {
     combos {
@@ -125,7 +125,7 @@
          &none    &mt LEFT_GUI ESCAPE    &mo 5    &kp SPACE    &kp ENTER          &mt LEFT_SHIFT BACKSPACE    &lt 6 DELETE    &kp C_MUTE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         nav {
