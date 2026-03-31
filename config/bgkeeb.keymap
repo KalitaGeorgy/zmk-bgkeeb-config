@@ -12,7 +12,7 @@
 
 &lt { tapping-term-ms = <150>; };
 
-&led_strip { chain-length = <36>; };
+&led_strip { chain-length = <18>; };
 
 / {
     combos {
