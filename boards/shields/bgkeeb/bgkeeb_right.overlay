@@ -25,7 +25,7 @@
     sensors = <&right_encoder>;
 };
 
-/* PMW3610 Trackball Configuration
+/* PMW3610 Trackball Configuration */
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -68,4 +68,3 @@
         device = <&trackball>;
     };
 };
-*/
