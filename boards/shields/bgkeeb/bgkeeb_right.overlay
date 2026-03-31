@@ -19,10 +19,10 @@
 
 right_encoder: encoder_right {
     compatible = "alps,ec11";
-    a-gpios = <8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    b-gpios = <9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    a-gpios = <8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     steps = <80>;
-    status = "disabled";
+    status = "okay";
 };
 
 &right_encoder {
