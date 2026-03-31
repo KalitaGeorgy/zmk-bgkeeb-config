@@ -125,7 +125,7 @@
          &kp NUMBER_1    &mt LEFT_GUI ESCAPE    &mo 5    &kp SPACE    &kp ENTER    &mt LEFT_SHIFT BACKSPACE    &lt 6 DELETE    &kp C_MUTE
             >;
             
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RGB_BRI RGB_BRD>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         nav {
