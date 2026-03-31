@@ -5,6 +5,7 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
+
 if SHIELD_BGKEEB_RIGHT
 
 config ZMK_SPLIT_ROLE_CENTRAL
@@ -18,9 +19,21 @@ config ZMK_POINTING
 
 endif
 
+
 if SHIELD_BGKEEB_LEFT || SHIELD_BGKEEB_RIGHT
 
 config ZMK_SPLIT
     default y
 
 endif
+
+
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
