@@ -133,7 +133,6 @@
 &kp CAPSLOCK    &kp LG(F2)        &kp LG(F1)        &kp LG(F3)         &kp CAPSLOCK      &kp LG(N)         &kp LS(LC(C))     &kp LC(LS(V))    &kp INSERT         &kp RIGHT_BRACKET
                 &none             &none             &none              &trans            &mkp LCLK         &mkp MCLK         &mkp RCLK        &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         sym {
@@ -143,7 +142,6 @@
 &kp CAPSLOCK    &kp GRAVE       &kp SINGLE_QUOTE     &kp SEMICOLON    &kp DOLLAR       &kp EQUAL       &kp UNDERSCORE    &kp HASH        &kp PERCENT     &kp QUESTION
                 &none           &kp BACKSPACE        &kp PERIOD       &kp COMMA        &trans          &none             &none           &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         func {
@@ -153,7 +151,6 @@
 &none     &none     &none     &none     &kp C_BRIGHTNESS_DEC    &kp C_VOLUME_DOWN    &kp C_MUTE    &none               &none             &kp F12
           &none     &none     &none     &none                   &none                &none         &trans              &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         bt {
@@ -163,7 +160,6 @@
 &none           &none           &none           &none           &none           &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &none           &none           &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         compas {
@@ -173,7 +169,6 @@
 &kp LS(Z)    &kp LS(X)    &kp LS(C)    &kp LS(V)    &kp LS(B)    &kp LS(N)    &kp LS(M)    &kp N1    &kp N2    &kp N3
              &trans       &trans       &trans       &trans       &kp ENTER    &kp DOT      &kp N0    &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
