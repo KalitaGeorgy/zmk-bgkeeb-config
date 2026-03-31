@@ -123,7 +123,7 @@
          &none    &mt LEFT_GUI ESCAPE    &mo 5    &kp SPACE    &kp ENTER    &mt LEFT_SHIFT BACKSPACE    &lt 3 DELETE    &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav {
@@ -133,7 +133,7 @@
 &kp CAPSLOCK    &kp LG(F2)        &kp LG(F1)        &kp LG(F3)         &kp CAPSLOCK      &kp LG(N)         &kp LS(LC(C))     &kp LC(LS(V))    &kp INSERT         &kp RIGHT_BRACKET
                 &none             &none             &none              &trans            &mkp LCLK         &mkp MCLK         &mkp RCLK        &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         sym {
@@ -143,7 +143,7 @@
 &kp CAPSLOCK    &kp GRAVE       &kp SINGLE_QUOTE     &kp SEMICOLON    &kp DOLLAR       &kp EQUAL       &kp UNDERSCORE    &kp HASH        &kp PERCENT     &kp QUESTION
                 &none           &kp BACKSPACE        &kp PERIOD       &kp COMMA        &trans          &none             &none           &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         func {
