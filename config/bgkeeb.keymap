@@ -124,12 +124,8 @@
 &kp Z    &kp X           &kp C                  &kp V    &kp B        &kp N        &kp M                       &kp COMMA       &kp DOT       &kp FSLH
          &kp NUMBER_1    &mt LEFT_GUI ESCAPE    &mo 5    &kp SPACE    &kp ENTER    &mt LEFT_SHIFT BACKSPACE    &lt 6 DELETE    &kp C_MUTE
             >;
-
-            #if defined(CONFIG_SHIELD_BGKEEB_LEFT)
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            #elif defined(CONFIG_SHIELD_BGKEEB_RIGHT)
-            sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD>;
-            #endif
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav {
