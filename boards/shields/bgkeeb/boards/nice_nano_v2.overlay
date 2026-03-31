@@ -40,9 +40,13 @@
     };
 };
 
-
 / {
+    aliases {
+        led-strip = &led_strip;
+    };
+
     chosen {
         zmk,underglow = &led_strip;
+        zephyr,led-strip = &led_strip;
     };
 };
