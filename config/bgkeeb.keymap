@@ -125,7 +125,7 @@
          &mkp LCLK    &kp ESCAPE    &mo 5    &kp SPACE    &kp ENTER    &kp BACKSPACE    &mo 6        &mkp RCLK
             >;
 
-            sensor-bindings = <&msc SCRL_UP SCRL_DOWN &msc SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&inc_dec_kp F19 F20>;
         };
 
         nav {
@@ -172,7 +172,7 @@
              &trans       &kp F17      &kp F15      &kp F18      &trans       &trans       &kp DOT    &trans
             >;
 
-            sensor-bindings = <&msc SCRL_UP SCRL_DOWN &msc SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&inc_dec_kp F19 F20>;
         };
 
         led {
