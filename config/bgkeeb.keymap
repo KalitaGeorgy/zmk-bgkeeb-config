@@ -99,7 +99,7 @@
         };
 
         get_bt {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <31 36>;
         };
 
@@ -119,10 +119,21 @@
 
         default {
             bindings = <
+&kp LS(Q)    &kp LS(W)    &kp LS(E)    &kp LS(R)    &kp LS(T)    &kp LS(Y)    &kp LS(U)        &kp N7     &kp N8       &kp N9
+&kp LS(A)    &kp LS(S)    &kp LS(D)    &kp LS(F)    &kp LS(G)    &kp LS(H)    &kp LS(J)        &kp N4     &kp N5       &kp N6
+&kp LS(Z)    &kp LS(X)    &kp LS(C)    &kp LS(V)    &kp LS(B)    &kp LS(N)    &kp N0           &kp N1     &kp N2       &kp N3
+             &mkp RCLK    &kp F17      &mkp LCLK    &kp F15      &kp ENTER    &kp BACKSPACE    &kp DOT    &mkp LCLK
+            >;
+
+            sensor-bindings = <&inc_dec_kp F19 F20>;
+        };
+
+        main {
+            bindings = <
 &kp Q    &kp W        &kp E    &kp R         &kp T        &kp Y          &kp U            &kp I        &kp O        &kp P
 &kp A    &kp S        &kp D    &kp F         &kp G        &kp H          &kp J            &kp K        &kp L        &kp SEMICOLON
 &kp Z    &kp X        &kp C    &kp V         &kp B        &kp N          &kp M            &kp COMMA    &kp DOT      &kp SLASH
-         &mkp LCLK    &mo 5    &kp ESCAPE    &kp SPACE    &lt 5 ENTER    &kp BACKSPACE    &mo 5        &mkp RCLK
+         &mkp RCLK    &mo 0    &kp ESCAPE    &kp SPACE    &lt 0 ENTER    &kp BACKSPACE    &mo 0        &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp F19 F20>;
@@ -162,17 +173,6 @@
 &none           &none           &none           &none           &none           &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &none           &none           &none
             >;
-        };
-
-        compas {
-            bindings = <
-&kp LS(Q)    &kp LS(W)    &kp LS(E)    &kp LS(R)    &kp LS(T)    &kp LS(Y)    &kp LS(U)        &kp N7     &kp N8    &kp N9
-&kp LS(A)    &kp LS(S)    &kp LS(D)    &kp LS(F)    &kp LS(G)    &kp LS(H)    &kp LS(J)        &kp N4     &kp N5    &kp N6
-&kp LS(Z)    &kp LS(X)    &kp LS(C)    &kp LS(V)    &kp LS(B)    &kp LS(N)    &kp N0           &kp N1     &kp N2    &kp N3
-             &mkp RCLK    &kp F17      &mkp LCLK    &kp F15      &kp ENTER    &kp BACKSPACE    &kp DOT    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp F19 F20>;
         };
 
         led {
